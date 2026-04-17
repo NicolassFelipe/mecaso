@@ -24,15 +24,16 @@ export default async function Navbar() {
           <div className="flex-shrink-0 flex items-center gap-2">
             <Heart className="h-8 w-8 text-teal-600" fill="currentColor" />
             <Link href="/" className="text-3xl font-bold text-zinc-900 tracking-tight">
-              MeCaso
+              MeCaso.cl
             </Link>
           </div>
 
           {/* SECCIÓN CENTRAL: Enlaces (Ocultos en celulares con 'hidden md:flex') */}
           <div className="hidden md:flex space-x-10">
+            <Link href="#" className="text-lg font-medium text-zinc-700 hover:text-teal-600 transition-colors">Novias</Link>
             <Link href="#" className="text-lg font-medium text-zinc-700 hover:text-teal-600 transition-colors">Lugares</Link>
-            <Link href="#" className="text-lg font-medium text-zinc-700 hover:text-teal-600 transition-colors">Proveedores</Link>
-            <Link href="#" className="text-lg font-medium text-zinc-700 hover:text-teal-600 transition-colors">Vestidos</Link>
+            <Link href="#" className="text-lg font-medium text-zinc-700 hover:text-teal-600 transition-colors">Banquetería</Link>
+            <Link href="#" className="text-lg font-medium text-zinc-700 hover:text-teal-600 transition-colors">Multimedia</Link>
             <Link href="#" className="text-lg font-medium text-zinc-700 hover:text-teal-600 transition-colors">Otros</Link>
           </div>
 
