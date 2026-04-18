@@ -49,10 +49,17 @@ export const proveedores = pgTable("proveedores", {
   id: serial("id").primaryKey(),
   userId: text("userId").references(() => users.id).unique(),
   nombreComercial: text("nombre_comercial").notNull(),
+  slug: text("slug").unique(),
   descripcion: text("descripcion"),
   ciudad: text("ciudad"),
   telefono: text("telefono"),
   webPage: text("web_page"),
+  categoria: text("categoria"),
+  rating: text("rating"), 
+  reviews: integer("reviews").default(0),
+  precioBase: text("precio_base"),
+  capacidad: integer("capacidad"),
+  imagenUrl: text("imagen_url"),
 });
 
 export const serviciosProductos = pgTable("servicios_productos", {
